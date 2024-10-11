@@ -8,8 +8,8 @@ namespace Chunks
     [Serializable]
     public class Chunk
     {
-        private Vector3 origin;
-        private Vector3 size;
+        public Vector3 origin;
+        public Vector3 size;
 
         public Chunk(Vector3 origin, Vector3 size)
         {
@@ -19,5 +19,6 @@ namespace Chunks
 
         public Vector3 GetOrigin() => origin;
         public Vector3 GetSize() => size;
+
     }
 }

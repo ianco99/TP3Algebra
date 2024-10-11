@@ -6,7 +6,8 @@ namespace Chunks
     public class ChunkGenerator : MonoBehaviour
     {
         [SerializeField] private Vector3 gridSize;
-        List<Chunk> chunks = new List<Chunk>();
+        [SerializeField] List<Chunk> chunks = new List<Chunk>();
+        [SerializeField] int highlightChunkNumber = 0;
 
         [ContextMenu("GenerateChuncks")]
         public void CreateChunks()
@@ -31,14 +32,27 @@ namespace Chunks
 
         }
 
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
             if (chunks.Count > 0)
             {
                 for (int i = 0; i < chunks.Count; i++)
                 {
-                    Gizmos.DrawWireCube(chunks[i].GetOrigin() + chunks[i].GetSize() / 2.0f, chunks[i].GetSize());
+                    {
+                        Gizmos.color = Color.white;
+                        Gizmos.DrawWireCube(chunks[i].GetOrigin() + chunks[i].GetSize() / 2.0f, chunks[i].GetSize());
+                    }
+
                 }
+            }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            if (chunks.Count > highlightChunkNumber && highlightChunkNumber >= 0)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawCube(chunks[highlightChunkNumber].GetOrigin() + chunks[highlightChunkNumber].GetSize() / 2.0f, chunks[highlightChunkNumber].GetSize());
             }
         }
     }
