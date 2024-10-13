@@ -11,6 +11,8 @@ namespace Chunks
         public Vector3 origin;
         public Vector3 size;
 
+
+
         public Chunk(Vector3 origin, Vector3 size)
         {
             this.origin = origin;
