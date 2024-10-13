@@ -25,4 +25,11 @@ public class Plane
         normal.y * (pointToCheck.y - point.y) +
         normal.z * (pointToCheck.z - point.z) == 0;
     }
+
+    public bool IsPositiveToThePlane(Vector3 pointToCheck)
+    {
+        return normal.x * (pointToCheck.x - point.x) +
+        normal.y * (pointToCheck.y - point.y) +
+        normal.z * (pointToCheck.z - point.z) > 0;
+    }
 }
