@@ -5,7 +5,8 @@ namespace Chunks
 {
     public class ChunkGenerator : MonoBehaviour
     {
-        [SerializeField] private Vector3 gridSize;
+        [SerializeField] private Vector3 gridDimensions;
+        [SerializeField] private Vector3 unitSize;
         [SerializeField] List<Chunk> chunks = new List<Chunk>();
         [SerializeField] int highlightChunkNumber = 0;
 
@@ -14,16 +15,16 @@ namespace Chunks
         {
             chunks.Clear();
 
-            for (int i = 0; i < gridSize.z; i++)
+            for (int i = 0; i < gridDimensions.z; i++)
             {
-                for (int j = 0; j < gridSize.y; j++)
+                for (int j = 0; j < gridDimensions.y; j++)
                 {
-                    for (int k = 0; k < gridSize.x; k++)
+                    for (int k = 0; k < gridDimensions.x; k++)
                     {
-                        Vector3 gridOffset = new Vector3(transform.position.x + gridSize.x * k,
-                                                         transform.position.y + gridSize.y * j,
-                                                         transform.position.z + gridSize.z * i);
-                        Chunk newChunk = new Chunk(gridOffset, Vector3.one * 5);
+                        Vector3 gridOffset = new Vector3(transform.position.x + unitSize.x * k,
+                                                         transform.position.y + unitSize.y * j,
+                                                         transform.position.z + unitSize.z * i);
+                        Chunk newChunk = new Chunk(gridOffset, unitSize);
 
                         chunks.Add(newChunk);
                     }
@@ -54,6 +55,12 @@ namespace Chunks
                 Gizmos.color = Color.red;
                 Gizmos.DrawCube(chunks[highlightChunkNumber].GetOrigin() + chunks[highlightChunkNumber].GetSize() / 2.0f, chunks[highlightChunkNumber].GetSize());
             }
+        }
+
+        [ContextMenu("Iscontained")]
+        public void Test()
+        {
+             Debug.Log(chunks[highlightChunkNumber].ContainsPoint(transform.position));
         }
     }
 }

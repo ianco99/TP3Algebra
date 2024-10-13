@@ -28,6 +28,7 @@ public class Plane
 
     public bool IsPositiveToThePlane(Vector3 pointToCheck)
     {
+        //Preguntar a lean que debería hacer si el punto está exactamente en el plano
         return normal.x * (pointToCheck.x - point.x) +
         normal.y * (pointToCheck.y - point.y) +
         normal.z * (pointToCheck.z - point.z) > 0;

@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &499576257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499576259}
+  - component: {fileID: 499576258}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &499576258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499576257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d86464eac59e9e44ab2de3f3885b850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &499576259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499576257}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.5077734, y: 2.4026499, z: 15.088752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,258 +382,259 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27218628274854d498b38ade22f37fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 5, y: 5, z: 5}
+  gridDimensions: {x: 5, y: 5, z: 5}
+  unitSize: {x: 3, y: 3, z: 3}
   chunks:
-  - origin: {x: 0, y: 0, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 0, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 0, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 0, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 0, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 5, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 5, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 5, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 5, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 5, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 10, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 10, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 10, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 10, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 10, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 15, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 15, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 15, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 15, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 15, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 20, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 20, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 20, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 20, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 20, z: 0}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 0, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 0, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 0, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 0, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 0, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 5, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 5, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 5, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 5, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 5, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 10, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 10, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 10, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 10, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 10, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 15, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 15, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 15, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 15, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 15, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 20, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 20, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 20, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 20, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 20, z: 5}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 0, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 0, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 0, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 0, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 0, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 5, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 5, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 5, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 5, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 5, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 10, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 10, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 10, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 10, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 10, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 15, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 15, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 15, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 15, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 15, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 20, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 20, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 20, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 20, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 20, z: 10}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 0, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 0, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 0, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 0, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 0, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 5, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 5, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 5, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 5, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 5, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 10, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 10, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 10, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 10, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 10, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 15, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 15, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 15, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 15, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 15, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 20, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 20, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 20, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 20, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 20, z: 15}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 0, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 0, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 0, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 0, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 0, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 5, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 5, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 5, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 5, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 5, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 10, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 10, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 10, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 10, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 10, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 15, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 15, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 15, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 15, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 15, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 0, y: 20, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 5, y: 20, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 10, y: 20, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 15, y: 20, z: 20}
-    size: {x: 5, y: 5, z: 5}
-  - origin: {x: 20, y: 20, z: 20}
-    size: {x: 5, y: 5, z: 5}
+  - origin: {x: 2.63, y: 7.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 7.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 7.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 7.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 7.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 10.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 10.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 10.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 10.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 10.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 13.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 13.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 13.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 13.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 13.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 16.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 16.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 16.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 16.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 16.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 19.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 19.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 19.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 19.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 19.2, z: 2.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 7.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 7.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 7.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 7.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 7.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 10.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 10.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 10.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 10.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 10.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 13.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 13.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 13.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 13.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 13.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 16.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 16.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 16.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 16.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 16.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 19.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 19.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 19.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 19.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 19.2, z: 5.06}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 10.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 10.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 10.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 10.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 10.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 13.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 13.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 13.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 13.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 13.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 16.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 16.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 16.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 16.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 16.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 19.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 19.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 19.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 19.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 19.2, z: 8.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 10.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 10.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 10.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 10.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 10.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 13.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 13.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 13.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 13.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 13.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 16.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 16.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 16.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 16.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 16.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 19.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 19.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 19.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 19.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 19.2, z: 11.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 10.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 10.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 10.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 10.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 10.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 13.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 13.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 13.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 13.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 13.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 16.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 16.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 16.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 16.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 16.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 2.63, y: 19.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 5.63, y: 19.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 8.63, y: 19.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 11.63, y: 19.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
+  - origin: {x: 14.63, y: 19.2, z: 14.059999}
+    size: {x: 3, y: 3, z: 3}
   highlightChunkNumber: 0
 --- !u!4 &1882642843
 Transform:
@@ -600,7 +645,7 @@ Transform:
   m_GameObject: {fileID: 1882642841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.63, y: 7.2, z: 2.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -613,3 +658,4 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1882642843}
+  - {fileID: 499576259}
