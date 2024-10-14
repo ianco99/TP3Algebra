@@ -9,6 +9,7 @@ namespace Chunks
     public class Chunk
     {
         private List<Plane> planes;
+        //private Vector3[] points;
 
         enum Axis { x, y, z };
 
@@ -63,6 +64,11 @@ namespace Chunks
                 newPlane = new Plane(newNormal, newPoint);
                 planes.Add(newPlane);
             }
+        }
+
+        private void GeneratePoints()
+        {
+
         }
 
         public Vector3 GetOrigin() => origin;

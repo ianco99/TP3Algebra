@@ -382,260 +382,100 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27218628274854d498b38ade22f37fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridDimensions: {x: 5, y: 5, z: 5}
-  unitSize: {x: 3, y: 3, z: 3}
+  gridDimensions: {x: 9, y: 1, z: 5}
+  unitSize: {x: 3, y: 10, z: 3}
   chunks:
   - origin: {x: 2.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 5.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 8.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 11.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 14.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 10.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 10.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 10.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 10.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 10.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 13.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 13.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 13.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 13.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 13.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 16.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 16.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 16.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 16.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 16.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 19.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 19.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 19.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 19.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 19.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 17.630001, y: 7.2, z: 2.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 20.630001, y: 7.2, z: 2.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 23.630001, y: 7.2, z: 2.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 26.630001, y: 7.2, z: 2.06}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 2.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 5.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 8.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 11.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 14.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 10.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 10.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 10.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 10.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 10.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 13.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 13.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 13.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 13.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 13.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 16.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 16.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 16.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 16.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 16.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 19.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 19.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 19.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 19.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 19.2, z: 5.06}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 17.630001, y: 7.2, z: 5.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 20.630001, y: 7.2, z: 5.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 23.630001, y: 7.2, z: 5.06}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 26.630001, y: 7.2, z: 5.06}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 2.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 5.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 8.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 11.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 14.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 10.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 10.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 10.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 10.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 10.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 13.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 13.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 13.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 13.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 13.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 16.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 16.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 16.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 16.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 16.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 19.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 19.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 19.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 19.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 19.2, z: 8.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 17.630001, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 20.630001, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 23.630001, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 26.630001, y: 7.2, z: 8.059999}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 2.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 5.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 8.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 11.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 14.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 10.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 10.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 10.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 10.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 10.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 13.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 13.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 13.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 13.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 13.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 16.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 16.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 16.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 16.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 16.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 19.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 19.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 19.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 19.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 19.2, z: 11.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 17.630001, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 20.630001, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 23.630001, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 26.630001, y: 7.2, z: 11.059999}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 2.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 5.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 8.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 11.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
+    size: {x: 3, y: 10, z: 3}
   - origin: {x: 14.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 10.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 10.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 10.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 10.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 10.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 13.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 13.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 13.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 13.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 13.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 16.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 16.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 16.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 16.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 16.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 2.63, y: 19.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 5.63, y: 19.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 8.63, y: 19.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 11.63, y: 19.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  - origin: {x: 14.63, y: 19.2, z: 14.059999}
-    size: {x: 3, y: 3, z: 3}
-  highlightChunkNumber: 0
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 17.630001, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 20.630001, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 23.630001, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 10, z: 3}
+  - origin: {x: 26.630001, y: 7.2, z: 14.059999}
+    size: {x: 3, y: 10, z: 3}
+  highlightChunkNumber: 4
 --- !u!4 &1882642843
 Transform:
   m_ObjectHideFlags: 0
