@@ -10,7 +10,7 @@ namespace Chunks
         [SerializeField] List<Chunk> chunks = new List<Chunk>();
         [SerializeField] int highlightChunkNumber = 0;
 
-        [ContextMenu("GenerateChuncks")]
+        [ContextMenu("GenerateChunks")]
         public void CreateChunks()
         {
             chunks.Clear();

@@ -66,10 +66,10 @@ namespace Chunks
             }
         }
 
-        private void GeneratePoints()
+        /*private void GeneratePoints()
         {
 
-        }
+        }*/
 
         public Vector3 GetOrigin() => origin;
         public Vector3 GetSize() => size;
