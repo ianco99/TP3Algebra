@@ -49,6 +49,7 @@ namespace AABB
 
             }
 
+            // unity starts at center, but in here it starts at left-low corner
             this.origin = new Vector3(meshKeyPoints["Leftest"].x, meshKeyPoints["Lowest"].y, meshKeyPoints["Closest"].z);
             this.size = new Vector3(meshKeyPoints["Rightest"].x, meshKeyPoints["Highest"].y, meshKeyPoints["Furthest"].z);
         }
@@ -58,8 +59,8 @@ namespace AABB
             bool collidesD1 = false;
             bool collidesD2 = false;
             bool collidesD3 = false;
-            //Separated by 2 dimensions
-            //it then needs to collide in two dimension minimum to ensure is colliding
+            // Separated by axis
+            // it then needs to collide in two dimensions minimum to ensure is colliding
             // also, it can be done with less checks, but this is readable
 
             //XY
@@ -69,7 +70,7 @@ namespace AABB
                 //is above
                 if (this.origin.y < Other.origin.y)
                 {
-                    collidesD1 = this.origin.x + this.size.x > Other.origin.x && this.origin.y + this.size.y > Other.origin.y ;
+                    collidesD1 = this.origin.x + this.size.x > Other.origin.x && this.origin.y + this.size.y > Other.origin.y;
                 }
                 else
                 {
@@ -81,11 +82,11 @@ namespace AABB
                 //is above
                 if (this.origin.y < Other.origin.y)
                 {
-                    //check
+                    collidesD1 = this.origin.x + this.size.x > Other.origin.x + Other.size.x && this.origin.y + this.size.y > Other.origin.y;
                 }
                 else
                 {
-                    //check
+                    collidesD1 = this.origin.x + this.size.x > Other.origin.x + Other.size.x && this.origin.y < Other.origin.y + Other.size.y;
                 }
             }
 
@@ -116,6 +117,11 @@ namespace AABB
                 }
             }
 
+            if (collidesD1 && collidesD2)
+            {
+                return true;
+            }
+
             //YZ
             //other is above
             if (this.origin.y < Other.origin.y)
@@ -143,7 +149,7 @@ namespace AABB
                 }
             }
 
-            return collidesD1 && collidesD3 || collidesD1 && collidesD2 || collidesD2 && collidesD3;
+            return collidesD1 && collidesD3 || collidesD2 && collidesD3;
         }
 
 
