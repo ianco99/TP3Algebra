@@ -9,6 +9,8 @@ namespace Chunks
         [SerializeField] private Vector3 unitSize;
         [SerializeField] List<Chunk> chunks = new List<Chunk>();
         [SerializeField] int highlightChunkNumber = 0;
+        [SerializeField] List<Triangle> faces = new List<Triangle>();
+        [SerializeField] Mesh mesh;
 
         [ContextMenu("GenerateChuncks")]
         public void CreateChunks()
@@ -27,10 +29,14 @@ namespace Chunks
                         Chunk newChunk = new Chunk(gridOffset, unitSize);
 
                         chunks.Add(newChunk);
+
+                        
                     }
                 }
             }
 
+            Triangle cacho = new Triangle(Vector3.zero, Vector3.zero, Vector3.zero);
+            faces.Add(cacho);
         }
 
         private void OnDrawGizmos()
