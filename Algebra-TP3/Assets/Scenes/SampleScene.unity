@@ -182,6 +182,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31e70bd6d2a326a48a82f0fd1b00a612, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1871360892}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31e70bd6d2a326a48a82f0fd1b00a612, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871360893}
   m_SourcePrefab: {fileID: 100100000, guid: 31e70bd6d2a326a48a82f0fd1b00a612, type: 3}
 --- !u!1 &383238790 stripped
 GameObject:
@@ -206,6 +209,24 @@ MonoBehaviour:
   triangles: []
   meshFilter: {fileID: 0}
   planes: []
+--- !u!114 &383238793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383238790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fedf1d1ce9b744693753ce11a35539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
+  meshFilter: {fileID: 0}
+  vertices: []
+  minV: {x: 0, y: 0, z: 0}
+  maxV: {x: 0, y: 0, z: 0}
 --- !u!1 &499576257
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +516,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1924929277}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1924929278}
   m_SourcePrefab: {fileID: 100100000, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
 --- !u!1001 &1079060043
 PrefabInstance:
@@ -506,15 +530,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.955423
+      value: 4.926
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.46
+      value: 6.676
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.408
+      value: 2.643
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -555,6 +579,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2009435361}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2009435362}
   m_SourcePrefab: {fileID: 100100000, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
 --- !u!1001 &1095936641
 PrefabInstance:
@@ -566,7 +593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.862246
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -574,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8620157
+      value: 2.796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -623,6 +650,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 383238792}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 383238793}
   m_SourcePrefab: {fileID: 100100000, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
 --- !u!1001 &1255134864
 PrefabInstance:
@@ -683,6 +713,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: daab72d52221159498a85d6873e0b6ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1385653021}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: daab72d52221159498a85d6873e0b6ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1385653022}
   m_SourcePrefab: {fileID: 100100000, guid: daab72d52221159498a85d6873e0b6ff, type: 3}
 --- !u!1 &1385653019 stripped
 GameObject:
@@ -707,6 +740,24 @@ MonoBehaviour:
   triangles: []
   meshFilter: {fileID: 0}
   planes: []
+--- !u!114 &1385653022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385653019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fedf1d1ce9b744693753ce11a35539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
+  meshFilter: {fileID: 0}
+  vertices: []
+  minV: {x: 0, y: 0, z: 0}
+  maxV: {x: 0, y: 0, z: 0}
 --- !u!1 &1871360890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 31e70bd6d2a326a48a82f0fd1b00a612, type: 3}
@@ -730,6 +781,24 @@ MonoBehaviour:
   triangles: []
   meshFilter: {fileID: 0}
   planes: []
+--- !u!114 &1871360893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871360890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fedf1d1ce9b744693753ce11a35539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
+  meshFilter: {fileID: 0}
+  vertices: []
+  minV: {x: 0, y: 0, z: 0}
+  maxV: {x: 0, y: 0, z: 0}
 --- !u!1 &1882642841
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,110 +828,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27218628274854d498b38ade22f37fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridDimensions: {x: 9, y: 1, z: 5}
-  unitSize: {x: 3, y: 10, z: 3}
+  gridDimensions: {x: 1, y: 1, z: 1}
+  unitSize: {x: 3, y: 3, z: 3}
   chunks:
   - origin: {x: 2.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 5.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 8.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 11.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 14.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 17.630001, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 20.630001, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 23.630001, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 26.630001, y: 7.2, z: 2.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 2.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 5.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 8.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 11.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 14.63, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 17.630001, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 20.630001, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 23.630001, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 26.630001, y: 7.2, z: 5.06}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 2.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 5.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 8.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 11.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 14.63, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 17.630001, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 20.630001, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 23.630001, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 26.630001, y: 7.2, z: 8.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 2.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 5.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 8.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 11.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 14.63, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 17.630001, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 20.630001, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 23.630001, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 26.630001, y: 7.2, z: 11.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 2.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 5.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 8.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 11.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 14.63, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 17.630001, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 20.630001, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 23.630001, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  - origin: {x: 26.630001, y: 7.2, z: 14.059999}
-    size: {x: 3, y: 10, z: 3}
-  highlightChunkNumber: 4
-  faces:
-  - vertexs:
-    - {x: 0, y: 0, z: 0}
-    - {x: 0, y: 0, z: 0}
-    - {x: 0, y: 0, z: 0}
-  - vertexs:
-    - {x: 0, y: 0, z: 0}
-    - {x: 0, y: 0, z: 0}
-    - {x: 0, y: 0, z: 0}
-  mesh: {fileID: 0}
+    size: {x: 3, y: 3, z: 3}
+  highlightChunkNumber: -1
+  pointsPerChunk: 100
+  objetos:
+  - {fileID: 383238790}
+  - {fileID: 2009435359}
+  - {fileID: 1924929275}
+  - {fileID: 1385653019}
+  - {fileID: 1871360890}
 --- !u!4 &1882642843
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +879,24 @@ MonoBehaviour:
   triangles: []
   meshFilter: {fileID: 0}
   planes: []
+--- !u!114 &1924929278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924929275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fedf1d1ce9b744693753ce11a35539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
+  meshFilter: {fileID: 0}
+  vertices: []
+  minV: {x: 0, y: 0, z: 0}
+  maxV: {x: 0, y: 0, z: 0}
 --- !u!1 &2009435359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
@@ -924,6 +920,24 @@ MonoBehaviour:
   triangles: []
   meshFilter: {fileID: 0}
   planes: []
+--- !u!114 &2009435362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009435359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fedf1d1ce9b744693753ce11a35539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  origin: {x: 0, y: 0, z: 0}
+  size: {x: 0, y: 0, z: 0}
+  meshFilter: {fileID: 0}
+  vertices: []
+  minV: {x: 0, y: 0, z: 0}
+  maxV: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class Model : MonoBehaviour
     [SerializeField] List<Plane> planes = new List<Plane>();
 
     public List<Triangle> Triangles { get { return triangles; } }
+    public MeshFilter MeshFilter { get { return meshFilter; } }
+    public Mesh Mesh { get { return meshFilter.mesh; } }
 
     private void Awake()
     {
@@ -52,5 +54,26 @@ public class Model : MonoBehaviour
         {
             planes[i].DrawGizmo(transform);
         }
+    }
+
+    public bool ContainAPoint(Vector3 point)
+    {
+        bool isContain = true;
+
+        for(int i = 0; i < planes.Count; i++)
+        {
+            Vector3 posP = planes[i].Center;
+            Vector3 normal = planes[i].Normal;
+
+            float dot = (point.x - posP.x) * normal.x + (point.y - posP.y) * normal.y + (point.z - posP.z) * normal.z;
+
+            if(dot < 0)
+            {
+                isContain = false;
+                break;
+            }
+        }
+
+        return isContain;
     }
 }

@@ -16,6 +16,7 @@ public class Plane
 
     public Vector3 Normal { get { return normal; } }
     public Vector3 Point { get { return point; } }
+    public Vector3 Center { get { return center; } }
 
     public Plane(Vector3 normal, Vector3 point)
     {
