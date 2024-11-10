@@ -101,10 +101,10 @@ namespace Chunks
             }
         }
 
-        [ContextMenu("Iscontained")]
-        public void Test()
-        {
-            Debug.Log(chunks[highlightChunkNumber].ContainsPoint(transform.position));
-        }
+        //[ContextMenu("Iscontained")]
+        //public void Test()
+        //{
+        //    Debug.Log(chunks[highlightChunkNumber].ContainsPoint(transform.position));
+        //}
     }
 }

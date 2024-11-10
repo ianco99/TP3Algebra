@@ -22,8 +22,6 @@ public class Plane
     {
         this.normal = normal;
         this.point = point;
-
-        PlaneDefinition();
     }
 
     public Plane(Vector3 vect1, Vector3 vect2, Vector3 vect3)
@@ -40,11 +38,6 @@ public class Plane
         vertices[1] = vect2;
         vertices[2] = vect3;
 
-        PlaneDefinition();
-    }
-
-    private void PlaneDefinition()
-    {
     }
 
     public bool LiesOnPlane(Vector3 pointToCheck)
@@ -56,7 +49,6 @@ public class Plane
 
     public bool IsPositiveToThePlane(Vector3 pointToCheck)
     {
-        //Preguntar a lean que debería hacer si el punto está exactamente en el plano
         return normal.x * (pointToCheck.x - point.x) +
         normal.y * (pointToCheck.y - point.y) +
         normal.z * (pointToCheck.z - point.z) > 0;
