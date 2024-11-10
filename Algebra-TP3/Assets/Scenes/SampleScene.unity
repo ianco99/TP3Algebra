@@ -834,7 +834,7 @@ MonoBehaviour:
   - origin: {x: 2.63, y: 7.2, z: 2.06}
     size: {x: 3, y: 3, z: 3}
   highlightChunkNumber: -1
-  pointsPerChunk: 100
+  pointsPerChunk: 25
   objetos:
   - {fileID: 383238790}
   - {fileID: 2009435359}
