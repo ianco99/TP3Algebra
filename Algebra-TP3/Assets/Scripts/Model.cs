@@ -87,12 +87,7 @@ public class Model : MonoBehaviour
 
         for (int i = 0; i < planes.Count; i++)
         {
-            Vector3 posP = planes[i].Center;
-            Vector3 normal = planes[i].Normal;
-
-            float dot = (point.x - posP.x) * normal.x + (point.y - posP.y) * normal.y + (point.z - posP.z) * normal.z;
-
-            if (dot < 0)
+            if (!planes[i].GetSide(point))
             {
                 isContain = false;
                 break;

@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 [Serializable]
@@ -39,21 +40,7 @@ public class Plane
         vertices[1] = vect2;
         vertices[2] = vect3;
 
-        distance = Vector3.Dot(normal, point);
-    }
-
-    public bool LiesOnPlane(Vector3 pointToCheck)
-    {
-        return normal.x * (pointToCheck.x - point.x) +
-        normal.y * (pointToCheck.y - point.y) +
-        normal.z * (pointToCheck.z - point.z) == 0;
-    }
-
-    public bool IsPositiveToThePlane(Vector3 pointToCheck)
-    {
-        return normal.x * (pointToCheck.x - point.x) +
-        normal.y * (pointToCheck.y - point.y) +
-        normal.z * (pointToCheck.z - point.z) > 0;
+        distance = Vector3.Dot(-normal, point);
     }
 
     public void DrawGizmo(Transform transform)
@@ -105,6 +92,7 @@ public class Plane
 
     public bool GetSide(Vector3 pointToCheck)
     {
-        return Vector3.Dot(normal, pointToCheck) + distance > 0f;
+        float dot = (pointToCheck.x - point.x) * normal.x + (pointToCheck.y - point.y) * normal.y + (pointToCheck.z - point.z) * normal.z;
+        return dot > 0;
     }
 }

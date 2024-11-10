@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Chunks
 {
@@ -105,20 +104,5 @@ namespace Chunks
 
         public Vector3 GetOrigin() => origin;
         public Vector3 GetSize() => size;
-
-        public bool ContainsPoint(Vector3 givenPoint)
-        {
-            bool pointIsContained = true;
-
-            for (int i = 0; i < planes.Count; i++)
-            {
-                if (!planes[i].IsPositiveToThePlane(givenPoint))
-                {
-                    pointIsContained = false;
-                }
-            }
-
-            return pointIsContained;
-        }
     }
 }
