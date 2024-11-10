@@ -14,6 +14,11 @@ namespace Chunks
 
         [SerializeField] List<GameObject> objetos = new List<GameObject>();
 
+        private void OnEnable()
+        {
+            CreateChunks();
+        }
+
         [ContextMenu("GenerateChunks")]
         public void CreateChunks()
         {
@@ -49,6 +54,7 @@ namespace Chunks
                     {
                         if (c1.IsColliding(c2))
                         {
+                            print(i + " y " + j + " colision");
                             Model m1 = objetos[i].GetComponent<Model>();
                             Model m2 = objetos[j].GetComponent<Model>();
 
@@ -60,7 +66,7 @@ namespace Chunks
                                     {
                                         if (m1.ContainAPoint(chunks[k].Points[l]) && m2.ContainAPoint(chunks[k].Points[l]))
                                         {
-                                            print(i + " y " + j + " estan colisionando");
+                                            print(i + " y " + j + " colision verdadera");
                                             break;
                                         }
                                     }

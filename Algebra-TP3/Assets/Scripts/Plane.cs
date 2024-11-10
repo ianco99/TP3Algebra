@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -9,6 +6,7 @@ public class Plane
 {
     [SerializeField] private Vector3 normal;
     [SerializeField] private Vector3 point;
+    [SerializeField] private float distance;
 
     [SerializeField] private Vector3 center;
 
@@ -17,11 +15,14 @@ public class Plane
     public Vector3 Normal { get { return normal; } }
     public Vector3 Point { get { return point; } }
     public Vector3 Center { get { return center; } }
+    public float Distance { get { return distance; } }
 
     public Plane(Vector3 normal, Vector3 point)
     {
-        this.normal = normal;
+        this.normal = normal.normalized;
         this.point = point;
+
+        distance = Vector3.Dot(this.normal, point);
     }
 
     public Plane(Vector3 vect1, Vector3 vect2, Vector3 vect3)
@@ -38,6 +39,7 @@ public class Plane
         vertices[1] = vect2;
         vertices[2] = vect3;
 
+        distance = Vector3.Dot(normal, point);
     }
 
     public bool LiesOnPlane(Vector3 pointToCheck)
@@ -56,12 +58,12 @@ public class Plane
 
     public void DrawGizmo(Transform transform)
     {
-        Vector3 transformedPoint = transform.TransformPoint(point);
-        Vector3 transformedNormal = transform.TransformDirection(normal);
+        Vector3 transformedPoint = point;
+        Vector3 transformedNormal = normal;
 
-        Vector3 v1 = transform.TransformPoint(vertices[0]);
-        Vector3 v2 = transform.TransformPoint(vertices[1]);
-        Vector3 v3 = transform.TransformPoint(vertices[2]);
+        Vector3 v1 = vertices[0];
+        Vector3 v2 = vertices[1];
+        Vector3 v3 = vertices[2];
 
         Gizmos.color = Color.green;
         Gizmos.DrawLine(v1, v2);
@@ -73,6 +75,23 @@ public class Plane
         Gizmos.DrawLine(center, center + transformedNormal * 0.2f);
     }
 
+    public void SetNewPoints(Vector3 vect1, Vector3 vect2, Vector3 vect3)
+    {
+        Vector3 vert1 = vect2 - vect1;
+        Vector3 vert2 = vect3 - vect1;
+
+        normal = GetCrossProduct(vert2, vert1).normalized;
+
+        point = vect1;
+
+        vertices = new Vector3[3];
+        vertices[0] = vect1;
+        vertices[1] = vect2;
+        vertices[2] = vect3;
+
+        distance = Vector3.Dot(normal, point);
+    }
+
     Vector3 GetCrossProduct(Vector3 rotationA, Vector3 rotationB)
     {
         Vector3 rotation;
@@ -82,5 +101,10 @@ public class Plane
         rotation.z = rotationA.x * rotationB.y - rotationA.y * rotationB.x;
 
         return rotation;
+    }
+
+    public bool GetSide(Vector3 pointToCheck)
+    {
+        return Vector3.Dot(normal, pointToCheck) + distance > 0f;
     }
 }

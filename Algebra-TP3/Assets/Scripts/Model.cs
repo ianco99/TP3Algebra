@@ -33,9 +33,9 @@ public class Model : MonoBehaviour
                 int vertIndex2 = meshFilter.mesh.triangles[i + 1];
                 int vertIndex3 = meshFilter.mesh.triangles[i + 2];
 
-                triangle.vertices[0] = vertices[vertIndex1];
-                triangle.vertices[1] = vertices[vertIndex2];
-                triangle.vertices[2] = vertices[vertIndex3];
+                triangle.vertices[0] = transform.TransformPoint(vertices[vertIndex1]);
+                triangle.vertices[1] = transform.TransformPoint(vertices[vertIndex2]);
+                triangle.vertices[2] = transform.TransformPoint(vertices[vertIndex3]);
 
                 triangles.Add(triangle);
             }
@@ -45,6 +45,31 @@ public class Model : MonoBehaviour
                 Plane plane = new Plane(triangles[i].vertices[0], triangles[i].vertices[1], triangles[i].vertices[2]);
                 planes.Add(plane);
             }
+        }
+    }
+
+    private void Update()
+    {
+        Vector3[] vertices = meshFilter.mesh.vertices;
+
+        int i = 0;
+
+        for (int j = 0; j < meshFilter.mesh.triangles.Length; j += 3)
+        {
+            Vector3 vertIndex1 = Vector3.zero;
+            Vector3 vertIndex2 = Vector3.zero;
+            Vector3 vertIndex3 = Vector3.zero;
+
+            int index1 = meshFilter.mesh.triangles[j];
+            int index2 = meshFilter.mesh.triangles[j + 1];
+            int index3 = meshFilter.mesh.triangles[j + 2];
+
+            vertIndex1 = transform.TransformPoint(vertices[index1]);
+            vertIndex2 = transform.TransformPoint(vertices[index2]);
+            vertIndex3 = transform.TransformPoint(vertices[index3]);
+
+            planes[i].SetNewPoints(vertIndex1, vertIndex2, vertIndex3);
+            i++;
         }
     }
 

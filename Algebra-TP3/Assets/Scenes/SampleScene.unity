@@ -471,11 +471,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.44
+      value: 8.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.7632847
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1485f85f228ca464b952ff83eca7ad5e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -530,15 +530,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.926
+      value: 3.081
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.676
+      value: 7.496
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.643
+      value: 3.447
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e65d3ddb0f302947afc3c191ba2c7ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -593,15 +593,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.23
+      value: 3.149
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.6
+      value: 8.873
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.796
+      value: 3.091
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bd21f1d81fb15b4a9da026362d6f92e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -830,9 +830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridDimensions: {x: 1, y: 1, z: 1}
   unitSize: {x: 3, y: 3, z: 3}
-  chunks:
-  - origin: {x: 2.63, y: 7.2, z: 2.06}
-    size: {x: 3, y: 3, z: 3}
+  chunks: []
   highlightChunkNumber: -1
   pointsPerChunk: 25
   objetos:
